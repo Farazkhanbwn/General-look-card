@@ -46,7 +46,7 @@ body{
 }
 
 .card__section{
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to right ,#81baf0 , #2998ff );
     padding-top: 8rem;
     /* position: relative; */
@@ -74,7 +74,6 @@ body{
     border-radius: 1.2rem;
     background-image: linear-gradient(to right , #f5f5f5 , #eeeeee);
     overflow: hidden;
-    min-width: calc((100% - 2 * var(--vertical-gutter)) / 3);
 }
 
 .card_image{
@@ -144,4 +143,23 @@ body{
 .review{
     font-size: 1.2rem;
     color: var(--paragraph-color);
+}
+
+@media screen and (max-width: 900px) {
+  .col-1-of-3 {
+    width: 100% !important;
+  }
+
+  .row{
+    max-width: 45rem;
+  }
+
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+}
+
+  .card__section{
+    padding-top: 3rem;
+  }
 }
