@@ -150,9 +150,9 @@ body{
     width: 100% !important;
   }
 
-  .row{
+  /* .row{
     max-width: 45rem;
-  }
+  } */
 
   .row [class^="col-"]:not(:last-child) {
     margin-right: 0;
