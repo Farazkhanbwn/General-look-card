@@ -1,7 +1,7 @@
 :root{
     --color-primar: rgba(#ccc);
-    --vertical-gutter: 6rem;
-    --row-width: 114rem;
+    --vertical-gutter: 3rem;
+    --row-width: 105rem;
     --paragraph-color: rgb(141, 140, 140);
 }
 
@@ -74,6 +74,11 @@ body{
     border-radius: 1.2rem;
     background-image: linear-gradient(to right , #f3f3f3 , #eeeeee);
     overflow: hidden;
+    transition: all .3s;
+}
+
+.card:hover{
+    transform: translateY(-1.5rem) scale(1.05);
 }
 
 /* changes background of 2 cards */
